@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+
+#heading
+{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 30px;
+    font-size: 60px;
+    font-family: 'Rowdies', cursive;
+    color: #AAB86C;
+}
+
+#ya
+{
+    display: flex;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    width: 26vw;
+    height: 70vh;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+.cards {
+    position: relative;
+    padding: 30px;
+    margin: 10px;
+    display: block;
+    left: 0px;
+    top: 5vh;
+    background-color: transparent;
+
+
+    perspective: 1000px;
+}
+
+.cards:hover .card {
+    transform: rotateY(180deg);
+}
+
+
+.cards .card video{
+    transform: scale(-1, 1);
+    
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.front
+{
+    
+    font-size: 40px;
+    object-fit: cover;
+    background-image: url("duck2.jpeg");
+    background-color: #92Bfb1;  
+    color:white;
+
+}
+/* .front h3{
+    background-color: rgba(0,0,0,0.4);
+} */
+
+.back {
+    color: white;
+    background-color: #dad6d6;
+}
+
+
