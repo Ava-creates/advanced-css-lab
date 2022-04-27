@@ -92,9 +92,10 @@
     left: 20px;
     transform: scale(-1,1);
     animation-name: move;
-    animation-duration: 5s;
+    animation-duration: 15s;
     transform-style: preserve-3d;
-
+    animation-iteration-count: 20;
+   
     
 }
 
@@ -106,10 +107,11 @@
         left: 0;
     }
     10% {
-        left: 50%;
+        left: 90%;
     }
     100% {
-        left: 90%;
+        left: 0%;
+        transform: scale(1,1);
         
     }
  
