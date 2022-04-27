@@ -7,8 +7,16 @@
     justify-content: center;
     width: 100vw;
     height: 30px;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Rowdies', cursive;
+    color: black;
+    transition: 0.3s;
+
+}
+
+#heading:hover
+{
+    font-size: 60px;
     color: #AAB86C;
 }
 
@@ -77,4 +85,33 @@
     background-color: #dad6d6;
 }
 
+#duck1
+{
+    position: relative;
+    
+    left: 20px;
+    transform: scale(-1,1);
+    animation-name: move;
+    animation-duration: 5s;
+    transform-style: preserve-3d;
 
+    
+}
+
+
+
+@keyframes move{
+
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 50%;
+    }
+    100% {
+        left: 90%;
+        
+    }
+ 
+  }
+  
